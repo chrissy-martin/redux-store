@@ -21,13 +21,12 @@ function Success() {
         });
       }
 
-      setTimeout(() => {
-        window.location.assign('/');
-      }, 3000);
     }
 
     saveOrder();
   }, [addOrder]);
+
+  setTimeout(function(){ window.location.assign("/")}, 3000);
 
   return (
     <div>
